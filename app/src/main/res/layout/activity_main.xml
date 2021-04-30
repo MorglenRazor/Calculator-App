@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    tools:context=".MainActivity">
+
+     <TextView
+         android:id="@+id/mainEditText"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:padding="@dimen/screen_padding"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         tools:ignore="MissingConstraints" />
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+
+     <Button
+         android:text="1"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/mainEditText"
+         app:layout_constraintEnd_toStartOf="@id/mainTwoNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainFourNumber"
+         android:id="@+id/mainOneNumber"
+         android:layout_width="wrap_content"
+         android:layout_margin="@dimen/button_margin"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:text="2"
+         app:layout_constraintStart_toEndOf="@id/mainOneNumber"
+         app:layout_constraintTop_toBottomOf="@id/mainEditText"
+         app:layout_constraintEnd_toStartOf="@id/mainThreeNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainFiveNumber"
+         android:layout_margin="@dimen/button_margin"
+         android:id="@+id/mainTwoNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:text="3"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toEndOf="@id/mainTwoNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainSixNumber"
+         android:layout_margin="@dimen/button_margin"
+         app:layout_constraintTop_toBottomOf="@id/mainEditText"
+         android:id="@+id/mainThreeNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:text="4"
+         app:layout_constraintTop_toBottomOf="@id/mainOneNumber"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toStartOf="@id/mainFiveNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainSevenNumber"
+         android:layout_margin="@dimen/button_margin"
+         android:id="@+id/mainFourNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:id="@+id/mainFiveNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/button_margin"
+         android:text="5"
+         app:layout_constraintBottom_toTopOf="@id/mainEightNumber"
+         app:layout_constraintEnd_toStartOf="@id/mainSixNumber"
+         app:layout_constraintStart_toEndOf="@id/mainFourNumber"
+         app:layout_constraintTop_toBottomOf="@id/mainTwoNumber" />
+
+     <Button
+         android:text="6"
+         app:layout_constraintStart_toEndOf="@id/mainFiveNumber"
+         app:layout_constraintTop_toBottomOf="@id/mainThreeNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainNineNumber"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_margin="@dimen/button_margin"
+         android:id="@+id/mainSixNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:text="7"
+         app:layout_constraintTop_toBottomOf="@id/mainFourNumber"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toStartOf="@id/mainEightNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainZeroNumber"
+         android:layout_margin="@dimen/button_margin"
+         android:id="@+id/mainSevenNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:text="8"
+         app:layout_constraintStart_toEndOf="@id/mainSevenNumber"
+         app:layout_constraintTop_toBottomOf="@id/mainFiveNumber"
+         app:layout_constraintEnd_toStartOf="@id/mainNineNumber"
+         app:layout_constraintBottom_toTopOf="@id/mainZeroNumber"
+         android:layout_margin="@dimen/button_margin"
+         android:id="@+id/mainEightNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+     <Button
+         android:id="@+id/mainNineNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="@dimen/button_margin"
+         android:text="9"
+         app:layout_constraintBottom_toTopOf="@id/mainZeroNumber"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toEndOf="@id/mainEightNumber"
+         app:layout_constraintTop_toBottomOf="@id/mainSixNumber" />
+
+     <Button
+         android:text="0"
+
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:layout_margin="@dimen/button_margin"
+         android:id="@+id/mainZeroNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+
+
+<!--  Debug Button   -->
+<!--     <Button-->
+<!--         app:layout_constraintTop_toBottomOf="@id/mainEditText"-->
+<!--         app:layout_constraintStart_toStartOf="parent"-->
+<!--         app:layout_constraintEnd_toEndOf="parent"-->
+<!--         android:text="@string/mainButton_debug"-->
+<!--         android:id="@+id/mainButtonShow"-->
+<!--         android:layout_width="wrap_content"-->
+<!--         android:layout_height="wrap_content"/>-->
+<!--  Debug Button   -->
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
